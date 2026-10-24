@@ -1,0 +1,13 @@
+[package]
+name = "kodanu_ecs"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+path = "src/_lib.rs"
+
+[dependencies]
+thiserror = { version = "2.0.21" }
+serde = {  version = "1.0.229" }
+
+macros = { path = "macros" }
