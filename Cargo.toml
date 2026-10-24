@@ -15,7 +15,7 @@ path = "src/_lib.rs"
 [dependencies]
 thiserror = { version = "2.0.21" }
 
-clama-macros = { vestion = "0.1.0", path = "clama-macros" }
+clama-macros = { version = "0.1.0", path = "clama-macros" }
 
 serde = { version = "1.0.229", features = ["derive"], optional = true }
 
