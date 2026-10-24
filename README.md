@@ -1,6 +1,6 @@
-# ECS
+# Spares
 
-A lightweight Entity Component System (ECS) for Rust, designed to organize game logic into modular systems with explicit component access and flexible entity queries.
+A lightweight Entity Component System for Rust, designed to organize game logic into modular systems with explicit component access and flexible entity queries.
 
 ## Features
 
