@@ -8,6 +8,6 @@ pub mod prelude {
     };
 }
 
-pub use {ecs::api::*, ecs::error::*, macros::*, plugin::api::*, scheduler::api::*};
+pub use {clama_macros::*, ecs::api::*, ecs::error::*, plugin::api::*, scheduler::api::*};
 
 pub(crate) use {ecs::internal::*, scheduler::internal::*};

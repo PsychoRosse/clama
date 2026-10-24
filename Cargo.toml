@@ -2,6 +2,12 @@
 name = "clama"
 version = "0.1.0"
 edition = "2024"
+description = "A lightweight, fast sparse set ECS for Kodanu engine."
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/PsychoRosse/plam"
+readme = "README.md"
+keywords = ["ecs"]
+categories = ["game-development"]
 
 [lib]
 path = "src/_lib.rs"
@@ -9,7 +15,7 @@ path = "src/_lib.rs"
 [dependencies]
 thiserror = { version = "2.0.21" }
 
-macros = { path = "macros" }
+clama-macros = { vestion = "0.1.0", path = "clama-macros" }
 
 serde = { version = "1.0.229", features = ["derive"], optional = true }
 
