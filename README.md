@@ -95,7 +95,3 @@ impl Plugin for GamePlugin {
     }
 }
 ```
-
-## License
-
-See [LICENSE](LICENSE) for license information.
