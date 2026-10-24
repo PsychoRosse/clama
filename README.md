@@ -1,4 +1,4 @@
-# Spares
+# Clama
 
 A lightweight Entity Component System for Rust, designed to organize game logic into modular systems with explicit component access and flexible entity queries.
 
@@ -26,7 +26,7 @@ Available filters:
 Example:
 
 ```rust
-use kodanu::ecs::{Query, Read, Write, With, Without};
+use clama::{Query, Read, Write, With, Without};
 
 fn movement_system(
     query: Query<(Write<Transform>, Read<Velocity>), With<Player>>,
@@ -50,7 +50,7 @@ fn npc_system(
 `Commands` provides an interface for managing entities from systems.
 
 ```rust
-use kodanu::ecs::Commands;
+use clama::Commands;
 
 fn setup_system(commands: Commands) {
     commands.spawn((
@@ -68,7 +68,7 @@ Resources provide shared data that systems can access without attaching it to in
 - `ResMut<T>` provides mutable access to a resource.
 
 ```rust
-use kodanu::ecs::{Res, ResMut};
+use clama::{Res, ResMut};
 
 fn game_system(
     time: Res<Time>,
@@ -83,7 +83,7 @@ fn game_system(
 Implement `Plugin` to register resources and systems through `Registry`. Systems can be assigned to execution stages such as `Startup`, `Update`, and `LateUpdate`.
 
 ```rust
-use kodanu::ecs::{Plugin, Registry, Stage};
+use clama::{Plugin, Registry, Stage};
 
 pub struct GamePlugin;
 
