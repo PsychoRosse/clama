@@ -1,5 +1,5 @@
 [package]
-name = "kodanu_ecs"
+name = "clama"
 version = "0.1.0"
 edition = "2024"
 
